@@ -11,7 +11,7 @@ boundary.append(row);
 
 async function getData() {
     try {
-        var rest_countries = await fetch("https://restcountries.com/v3.1/all");
+        var rest_countries = await fetch("https://restcountries.com/v2/all");
         var jsondata = await rest_countries.json();
            console.log(jsondata);
 
@@ -23,7 +23,7 @@ async function getData() {
 
             var header = document.createElement('h4')
             header.setAttribute('class', 'card-header text-center  text-white')
-            header.innerHTML = element.name.common;
+            header.innerHTML = element.name;
 
             var cardbody = document.createElement('div');
             cardbody.setAttribute('class', 'card-body text-center  text-white');
@@ -43,7 +43,7 @@ async function getData() {
 
             var code = document.createElement('h6');
             code.setAttribute('class', 'card-text text-center');
-            code.innerHTML = 'Country-code : ' + element.cca3;
+            code.innerHTML = 'Country-code : ' + element.alpha3Code;
 
             var climate = document.createElement('h6');
             climate.setAttribute('class', 'card-text text-center mt-3');
