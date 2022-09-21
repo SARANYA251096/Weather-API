@@ -1,0 +1,30 @@
+body{
+    /* background-color:rgb(231, 231, 225); */
+    background-color:#eaebed;
+}
+#cards{
+    background-color: rgb(22 41 56);
+   
+
+}
+img{
+    height: 150px;
+    width: 100px;
+    padding:5px;
+    border-radius: 10px;
+    margin-top:5px;
+}
+#card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 15px;
+    column-gap: 25px;
+   
+}
+h1{
+    text-align: center;
+   margin-top: 10px;
+   margin-bottom: 30px;
+  
+}
